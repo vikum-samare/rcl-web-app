@@ -1,0 +1,95 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less'; // Import Ant Design styles by less entry
+
+@gainsboro: #d9d8d8;
+@silver-light: #fcfbfb;
+
+@font-size-base: 15px;
+
+// height rules
+@height-lg: 48px;
+@height-base: 40px;
+@height-sm: 32px;
+
+// -------- Colors -----------
+@primary-color: #56bcbf;
+@btn-primary-color: #000;
+
+// Base Scaffolding Variables
+// ---
+@font-family: "Avenir Next";
+@border-radius-base: 3px;
+
+// Buttons
+@btn-font-weight: bold;
+@btn-border-radius-base: 5px;
+@btn-border-radius-sm: 3px;
+@btn-padding-horizontal-base: 31px - 1px;
+@btn-padding-horizontal-lg: @btn-padding-horizontal-base;
+@btn-padding-horizontal-sm: 16px - 1px;
+
+@btn-default-color:#000;
+@btn-default-bg: #ddf2f2;
+@btn-default-border: #56bcbf;
+
+// Input
+@input-border-color: @gainsboro;
+@input-bg: @silver-light;
+
+// Select
+@select-background: @silver-light;
+@select-border-color: @gainsboro;
+
+//Dropdown
+@dropdown-menu-bg: @silver-light;
+
+//dark theme
+@sidebar-theme-color: #2c6668;
+@layout-header-background: @white;
+@layout-footer-background: @white;
+@layout-sider-background: @sidebar-theme-color;
+@layout-trigger-background: @sidebar-theme-color;
+@layout-trigger-color: @white;
+@menu-dark-color: @white;
+@menu-dark-bg: @sidebar-theme-color;
+@menu-dark-submenu-bg: #285754;
+@menu-dark-highlight-color: @white;
+@menu-dark-item-active-bg: @black;
+@menu-dark-selected-item-text-color: @white;
+@menu-dark-item-hover-bg: transparent;
+
+
+// Media queries breakpoints
+// Extra small screen / phone
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+
+// Small screen / tablet
+@screen-sm: 576px;
+@screen-sm-min: @screen-sm;
+
+// Medium screen / desktop
+@screen-md: 768px;
+@screen-md-min: @screen-md;
+
+// Large screen / wide desktop
+@screen-lg: 992px;
+@screen-lg-min: @screen-lg;
+
+// Extra large screen / full hd
+@screen-xl: 1200px;
+@screen-xl-min: @screen-xl;
+
+// Extra extra large screen / large desktop
+@screen-xxl: 1600px;
+@screen-xxl-min: @screen-xxl;
+
+// provide a maximum
+@screen-xs-max: (@screen-sm-min - 1px);
+@screen-sm-max: (@screen-md-min - 1px);
+@screen-md-max: (@screen-lg-min - 1px);
+@screen-lg-max: (@screen-xl-min - 1px);
+@screen-xl-max: (@screen-xxl-min - 1px);
+
+// Layout
+@layout-body-background: #f0f2f5;

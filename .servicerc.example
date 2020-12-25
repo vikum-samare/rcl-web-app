@@ -1,0 +1,7 @@
+{
+    "apiEndpoint": "http://localhost:3000",
+    "enableClientCache": true,
+    "clientCacheExpirationTime": 604800000,
+    "environment": "local",
+    "defaultListSize": 1000
+}

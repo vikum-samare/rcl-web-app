@@ -1,0 +1,22 @@
+node_modules
+*.log
+yarn.lock
+.idea/
+package-lock.json
+.servicerc
+
+## Webpack Build Files
+dist
+public/bundle.js
+public/*.json
+public/*.woff
+public/*.woff2
+public/*.eot
+public/*.svg
+public/*.ttf
+public/styles.css
+public/1.css
+public/mainbundle.js
+public/vendors~mainbundle.js
+public/main.bundle.js
+public/main.css

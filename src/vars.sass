@@ -1,0 +1,145 @@
+/* Colours */
+$greyblue: #56bcbf
+$dustyTeal: #548c8f
+$dustyTeal-lighten: rgba(84,140,143, 0.16)
+$greeny-blue: #4ea8a1
+$dark-blue-grey: #1c474e
+$aqua-marine: #31d9c3
+$separator-gray: #638387 // Need proper name
+$dusty-teal: #548c8f
+$dark-blue-grey-two: #2c6668
+$gray-blue: #e1eced
+$gray-dark-blue: #f1f7f8
+$light-blue: #f3f8f8
+$greeny-dark-blue: #3d6167
+$gray-blue: #e1eced
+$gray-dark-blue: #f1f7f8
+$light-blue: #f3f8f8
+$greeny-dark-blue: #3d6167
+$light-blue-grey: #ddf2f2
+$white-two: #e6e6e6
+$greyblue: #56bcbf
+$greyish-brown: #4d4d4d
+$dusty-teal: $dustyTeal
+$slate: #3d6167
+$gray-blue: #e1eced
+$gray-dark-blue: #f1f7f8
+$light-blue: #f3f8f8
+$greeny-dark-blue: #3d6167
+$white-two: #e6e6e6
+$silver-light: #fcfbfb
+$very-light-grey: #cdcdcd
+$whisper: #e8e8e8
+$jungle-mist: #b9b8b9
+$mabel: #cceaeb
+$gray-white: #e7e7e7
+$ash-grey: #787878
+
+$black: #000000
+$white: #FFFFFF
+$scarlet: #d0021b
+$gainsboro: #d9d8d8
+$success: #52c41a
+$matterhorn: #4d4d4d
+$dark-grayscale: #1e3134
+$dark-red: #d13d36
+$dark-goldenrod: #b1792a
+$light-goldenrod: #f5a73e
+$dark-fern-green: #4fae4b
+$light-fern-green: #4fae4c
+$azuri: #ebf4f5
+$sky-blue: #7ccccc
+$white-smoke: #efefef
+
+$text-colour: #201F21
+$text-dark: #333333
+$text-light: #8F8F8F
+$text-dimLight: #afafaf
+$text-gray-black: #4a4a4a
+$trim-black: rgba(0, 0, 0, 0.65)
+$eclipse: #404040
+
+// Fonts
+$box-shadow-raised: 0 8px 12px -6px rgba(0, 0, 0, 0.1)
+$box-shadow-sunk: inset 2px 3px 4px 0 rgba(0, 0, 0, 0.09)
+
+$font-size-normal: 1rem
+$font-size-small: 0.625rem
+$font-size-large: 1.25rem
+
+$font-size-H1: 2.5rem
+$font-size-H2: 2rem
+$font-size-H3: 1.75rem
+$font-size-H4: 1.5rem
+$font-size-H5: 1.25rem
+$font-size-H6: 1rem
+
+
+// Media queries breakpoints
+// Extra small screen / phone
+$screen-xs: 480px
+$screen-xs-min: $screen-xs
+
+// Small screen / tablet
+$screen-sm: 576px
+$screen-sm-min: $screen-sm
+
+// Medium screen / desktop
+$screen-md: 768px
+$screen-md-min: $screen-md
+
+// Large screen / wide desktop
+$screen-lg: 992px
+$screen-lg-min: $screen-lg
+
+// Extra large screen / full hd
+$screen-xl: 1200px
+$screen-xl-min: $screen-xl
+
+// Extra extra large screen / large desktop
+$screen-xxl: 1600px
+$screen-xxl-min: $screen-xxl
+
+// Screen heights
+$screen-height-sm: 360px
+$screen-height-md: 480px
+$screen-height-lg: 720px
+$screen-height-sm-min: $screen-height-sm
+$screen-height-md-min: $screen-height-md
+$screen-height-lg-min: $screen-height-lg
+$screen-height-xs-max: $screen-height-sm - 1px
+
+
+// provide a maximum
+$screen-xs-max: ($screen-sm-min - 1px)
+$screen-sm-max: ($screen-md-min - 1px)
+$screen-md-max: ($screen-lg-min - 1px)
+$screen-lg-max: ($screen-xl-min - 1px)
+$screen-xl-max: ($screen-xxl-min - 1px)
+
+$xs-screen-only: only screen and (max-width : $screen-xs-max) // x < 575px
+$sm-screen-only: only screen and (min-width : $screen-sm-min) and (max-width : $screen-sm-max) //  576px > x < 767px
+$md-screen-only: only screen and (min-width : $screen-md-min) and (max-width : $screen-md-max) //  768px > x < 991px
+$lg-screen-only: only screen and (min-width : $screen-lg-min) and (max-width : $screen-lg-max) //  992px > x < 1199px
+$xl-screen-only: only screen and (min-width : $screen-xl-min) and (max-width : $screen-xl-max) //  1200px > x < 1599px
+$xxl-screen-only: only screen and (min-width : $screen-xxl-min) //  x > 1600px
+
+$xs-screen-below: only screen and (max-width : $screen-xs-max) //  x < 575px
+$sm-screen-below: only screen and (max-width : $screen-sm-max) //  x < 767px
+$md-screen-below: only screen and (max-width : $screen-md-max) //  x < 991px
+$lg-screen-below: only screen and (max-width : $screen-lg-max) //  992px > x < 1199px
+$xl-screen-below: only screen and (max-width : $screen-xl-max) //  1200px > x < 1599px
+$xxl-screen-below: only screen and (min-width : $screen-xxl-min) //  x > 1600px
+
+// Screen height media queries
+$xs-height-screen-only: only screen and (max-height : $screen-height-xs-max) // x < 360px
+$sm-height-screen-only: only screen and (min-height : $screen-height-sm-min) //  360px < x < 480px
+$md-height-screen-only: only screen and (min-height : $screen-height-md-min) //  480px < x < 720px
+$lg-height-screen-only: only screen and (min-height : $screen-height-lg) // 720px < x
+
+// Messages
+$message-positive: #17AD49
+$msg-pending: #F5A623
+$message-error: #D0021B
+$msg-pending-darker: #B1791C
+

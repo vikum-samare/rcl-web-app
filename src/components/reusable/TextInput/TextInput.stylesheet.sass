@@ -1,0 +1,27 @@
+@import "../../../vars"
+.input-password
+  display: flex
+  flex-wrap: nowrap
+  flex-direction: column
+  .input
+    &__label-container
+      &__label
+        font-size: 14px
+        font-weight: 500
+      &__required-label
+        color: $scarlet
+    &__input
+      box-shadow: inset 2px 3px 4px 0 rgba(0, 0, 0, 0.09)
+    &__error
+      margin-top: 3px
+      font-weight: 500
+      font-size: 12px
+      color: $scarlet
+      line-height: 1.5715
+      transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+
+.input-text
+  .input
+    &__label-container
+      &__required-label
+        color: $scarlet
