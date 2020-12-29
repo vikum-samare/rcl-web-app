@@ -9,4 +9,27 @@ body
   height: 100%
   margin: 0
 
+@mixin item-box
+    border: 2px solid black
+    min-width: 30%
+    max-width: 400px
+    border-radius: 10px
+    margin: 10px 0
 
+@mixin input-size-fields
+  @include item-box
+  min-height: 50px
+  padding: 10px
+
+@mixin button-field
+  min-width: 30%
+  border-radius: 10px
+  min-height: 50px
+  background: black
+  color: white
+  background: black !important
+
+@mixin flex-row
+  display: flex
+  flex-direction: row
+  justify-content: flex-start

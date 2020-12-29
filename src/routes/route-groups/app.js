@@ -1,30 +1,25 @@
 import React from "react"
-import {Home} from "../../pages/home"
-import { CreatePost } from "../../pages/post/create-post"
+import { PostList } from "../../pages/post/post-list"
+import { PostCreate } from "../../pages/post/post-create"
+import { PostDetails } from "../../pages/post/post-details"
 
 export default [
     {
         path: "/",
         exact: true,
         isPrivate: false,
-        sidebar: () => null,
-        main: () => <Home />,
-        footer: () => null
+        main: () => <PostList />
     },
     {
         path: "/post/create",
         exact: true,
         isPrivate: false,
-        sidebar: () => null,
-        main: () => <CreatePost />,
-        footer: () => null
+        main: () => <PostCreate />
     },
-    // {s
-    //     path: "/",
-    //     exact: true,
-    //     isPrivate: true,
-    //     sidebar: (props) => <Sidebar {...props} />,
-    //     main: (props) => <Dashboard {...props} />,
-    //     footer: (props) => <Footer {...props} />
-    // }
+    {
+        path: "/post/:postId",
+        exact: true,
+        isPrivate: false,
+        main: (props) => <PostDetails {...props} />
+    }
 ]

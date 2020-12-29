@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react"
-import { Layout } from "antd"
 
 class MainLayout extends PureComponent {
 

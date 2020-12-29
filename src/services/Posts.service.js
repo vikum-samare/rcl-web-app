@@ -6,7 +6,7 @@ import PostsUnknownError from "../common/exceptions/PostsUnknownError"
 import PostsNotFoundError from "../common/exceptions/PostsNotFoundError"
 
 
-class PostsService extends APIService{
+class PostsService extends APIService {
     serviceEndpoint = configs.apiEndpoint
 
     static handleError = (error) => {
@@ -14,13 +14,12 @@ class PostsService extends APIService{
             if (error.statusCode === 401) throw new PostsNoAccessError()
             else if (error.statusCode === 404) throw new PostsNotFoundError()
         }
-        throw new PostsUnknownError()
+        throw new PostsUnknownError(error)
     }
 
     async getAllPosts() {
         try {
             const { data } = await this.get("v1/api/posts/all")
-            console.log(data)
             return data
         }
         catch (error) {
@@ -40,7 +39,7 @@ class PostsService extends APIService{
         }
     }
 
-    async createPost({title, description, color}) {
+    async createPost({ title, description, color }) {
         try {
             const { data } = await this.post("v1/api/posts", {
                 title,
@@ -55,7 +54,7 @@ class PostsService extends APIService{
         }
     }
 
-    async createPostComment({urn, comment}) {
+    async createPostComment({ urn, comment }) {
         try {
             const { data } = await this.post(`v1/api/posts/${urn}/comment`, {
                 comment

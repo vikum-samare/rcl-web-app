@@ -1,0 +1,20 @@
+@import "../../../vars"
+@import "../../../App"
+
+.post-view
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 500px
+    padding: 10px
+
+  &__comment
+    @include input-size-fields
+
+  &__comment-input
+    @include input-size-fields
+    min-height: 80px
+
+  &__comment-button
+    @include button-field

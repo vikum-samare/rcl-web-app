@@ -1,9 +1,7 @@
 import React, { PureComponent, Suspense } from "react"
 import { Provider } from "react-redux"
 import { Router, Switch } from "react-router-dom"
-import "./services/i18n"
 
-// Design system import
 import "./designSystem.less"
 
 import Routes from "./routes"

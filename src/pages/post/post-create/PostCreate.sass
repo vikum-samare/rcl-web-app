@@ -1,0 +1,43 @@
+@import "../../../vars"
+@import "../../../App"
+
+.post-create
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 500px
+    padding: 10px
+
+  &__input-field
+    @include input-size-fields
+
+  &__text-area
+    @include input-size-fields
+    min-height: 80px
+
+  &__color-wrapper
+    @include flex-row
+    justify-content: space-between
+    min-width: 30%
+    padding: 10px
+    max-width: 400px
+
+  &__color-box-wrapper
+    @include flex-row
+
+  &__color-box
+    min-width: 30px
+    min-height: 30px
+    border: 1px solid black
+    display: flex
+    border-radius: 5px
+    margin: 0px 5px
+
+  &__color-radio
+    margin: auto
+
+  &__button
+    @include button-field
+
+

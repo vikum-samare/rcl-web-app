@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { withTranslation } from "react-i18next"
 import "./errorBoundary.stylesheet.sass"
 
 class ErrorBoundary extends Component {
@@ -19,7 +18,6 @@ class ErrorBoundary extends Component {
     }
 
     render() {
-        const { t } = this.props
         if (this.state.hasError) {
             // You can render any custom fallback UI
             return (
@@ -39,4 +37,4 @@ class ErrorBoundary extends Component {
     }
 }
 
-export default withTranslation(["pages/common"])(ErrorBoundary)
+export default ErrorBoundary
